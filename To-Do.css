@@ -1,0 +1,95 @@
+/* Full page setup */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Container card */
+.container {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  background: #03d8f0;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+  gap: 1rem;
+  text-align: center;
+}
+
+/* Heading */
+h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #f40505;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+/* Input field */
+input[type="text"] {
+  padding: 0.75rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 50%;
+}
+
+/* Add Task button */
+button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Task list layout */
+ul#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+/* Task list items */
+li {
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #dc3545;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #a71d2a;
+}
